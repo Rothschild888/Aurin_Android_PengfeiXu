@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutusback"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:stretchColumns="1"
+    tools:context="com.example.android.aurin_android_pengfeixu.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mainaurinlogo"
+        android:layout_marginTop="-110dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/spinner1_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select State:          "
+            android:textSize="28dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:id="@+id/spinner2_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select  Area: "
+            android:textSize="28dp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal"
+        android:stretchColumns="1">
+
+        <ImageButton
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1.12"
+            android:background="@drawable/webviewbutton" />
+
+        <ImageButton
+            android:id="@+id/next1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="-5dp"
+            android:layout_weight="1"
+            android:background="@drawable/searchbutton"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/aboutusbutton" />
+
+
+</LinearLayout>

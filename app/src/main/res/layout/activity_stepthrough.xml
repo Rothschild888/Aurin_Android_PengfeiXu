@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.aurin_android_pengfeixu.StepthroughActivity"
+    android:orientation="vertical"
+    android:background="@drawable/aboutusback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/walkthrough1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/startview_1"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/walkthrough2"
+                android:src="@drawable/mainview_2"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/walkthrough3"
+                android:src="@drawable/aboutus_3"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/walkthrough4"
+                android:src="@drawable/webview_4"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/walkthrough5"
+                android:src="@drawable/secondview_5"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/walkthrough6"
+                android:src="@drawable/detailview_6"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/walkthrough7"
+                android:src="@drawable/mapfilterlview_7"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/walkthrough8"
+                android:src="@drawable/figureview_8"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/walkthrough9"
+                android:src="@drawable/mapview_9"/>
+        </ViewFlipper>
+
+        <ImageButton
+            android:id="@+id/skip_button"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:background="@drawable/skipbutton"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

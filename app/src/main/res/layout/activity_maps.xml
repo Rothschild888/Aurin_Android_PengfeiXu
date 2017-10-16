@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.aurin_android_pengfeixu.MapsActivity" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="175dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/zoom_buttons_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="setZoomButtonsEnabled"
+                android:text="Zoom" />
+
+            <CheckBox
+                android:id="@+id/compass_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="setCompassEnabled"
+                android:text="Compass" />
+
+            <CheckBox
+                android:id="@+id/mylocationbutton_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:onClick="setMyLocationButtonEnabled"
+                android:text="MyLocation" />
+
+            <CheckBox
+                android:id="@+id/mylocationlayer_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false"
+                android:onClick="setMyLocationLayerEnabled"
+                android:text="mylocation layer" />
+
+            <CheckBox
+                android:id="@+id/scroll_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="setScrollGesturesEnabled"
+                android:text="Scroll" />
+
+            <CheckBox
+                android:id="@+id/zoom_gestures_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="setZoomGesturesEnabled"
+                android:text="Zoom_Gestures" />
+
+            <CheckBox
+                android:id="@+id/tilt_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="setTiltGesturesEnabled"
+                android:text="Tilt" />
+
+            <CheckBox
+                android:id="@+id/rotate_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="setRotateGesturesEnabled"
+                android:text="Totate" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
